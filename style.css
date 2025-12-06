@@ -168,7 +168,7 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: start;
     margin-top: 100px;
-    margin-left: 0; 
+    margin-left: 250px; 
 }
 
 @media (max-width: 768px) {
@@ -198,6 +198,12 @@ body {
 .secb1 a,
 .secb2 a{
     text-decoration-line: none ;
+    color: #0B1A33;
+    transition: 0.5s ease;  
+}
+.secb1 a:hover,
+.secb2 a:hover{
+    text-decoration: underline;
     color: #0B1A33;
 }
 .secb1 p, .secb2 p {
@@ -279,15 +285,19 @@ body {
     color: #102542;
 }
 
-.secaa1 a{
-    margin-left:700px;
-    color: #102542;
-}
 .secaa1 h3{
     margin-top:10px;
     color: #102542;
 }
 
+.secaa1 a{
+    margin-left:700px;
+    color: #102542;
+}
+.secaa1 h2{
+    margin-top:80px;
+    margin-bottom:20px;
+}
 /* GLOBAL */
 body {
     margin: 0;
