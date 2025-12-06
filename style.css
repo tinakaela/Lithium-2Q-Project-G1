@@ -160,13 +160,29 @@ body {
 .contentb1, .contentb2 {
     width: 90%;
     margin: 40px auto; 
-    margin-left:350px;
+    margin-left:150px;
 }
 
 .secb1, .secb2 {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     align-items: start;
+    margin-top: 100px;
+    margin-left: 0; 
+}
+
+@media (max-width: 768px) {
+    .secb1, .secb2 {
+        grid-template-columns: 1fr; 
+        margin-left: 0; 
+        margin-top: 40px; 
+    }
+
+    .secb1 img, .secb2 img {
+        width: 100%;
+        height: auto;
+        grid-column: 1; 
+    }
 }
 
 .secb1 h2, .secb2 h2 {
@@ -191,9 +207,9 @@ body {
 }
 
 .secb1 img, .secb2 img {
-    width: 400px;
-    height: 200px;
-    margin-left:-200px;
+    width: 500px;
+    height: 270px;
+    margin-left:-120px;
     margin-bottom:50px;
     border: 2px solid #D4AF37;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
@@ -316,7 +332,7 @@ body {
     text-decoration: underline;
 }
 
-/* HERO SECTION */
+/* MAIN ABOUT SECTION */
 .about-hero {
     text-align: center;
     padding: 60px 20px;
@@ -335,7 +351,7 @@ body {
     margin: auto;
 }
 
-/* ABOUT CARDS */
+/* ABOUT US */
 .about-content {
     font-size:20px;
     display: flex;      
